@@ -379,7 +379,7 @@ public class TscCommand {
 
     public void addQRCode(int x, int y, EEC level, int qrWidth, ROTATION rotation, String code) {
         //var cmd = 'QRCODE 条码X方向起始点,条码Y方向起始点,纠错级别,二维码高度,A(A和M),旋转角度,M2（分为类型1和类型2）,S1 (s1-s8,默认s7),\"1231你好2421341325454353\"';
-        String str = "QRCODE " + x + "," + y + "," + level.getValue() + "," + qrWidth + ",A," + rotation.getValue() + ",M2,S1,\"" + code + "\"\r\n";
+        String str = "QRCODE " + x + "," + y + "," + level.getValue() + "," + qrWidth + ",A,M2,\"" + code + "\"\r\n";
         addStrToCommand(str);
     }
 //    public void addBitmap(int x,int y,BITMAP_MODE mode,int imgWidth, Bitmap b){
